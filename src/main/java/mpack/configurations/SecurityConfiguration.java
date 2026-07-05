@@ -33,10 +33,10 @@ public class SecurityConfiguration {
 		
 	return	sec.csrf(a-> a.disable())
 			.cors(Customizer.withDefaults())
-		.authorizeHttpRequests(req-> req.requestMatchers("/login","/register","/allProducts","/allProductsTwo","/allProductsLast","/").permitAll().anyRequest().authenticated())
-		.addFilterBefore(Jwtfilter, UsernamePasswordAuthenticationFilter.class)
-		.sessionManagement(a-> a.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
-		.build() ;
+			.authorizeHttpRequests(req-> req.requestMatchers("/login","/register","/allProducts","/allProductsTwo","/allProductsLast","/","/test").permitAll().anyRequest().authenticated())
+			.addFilterBefore(Jwtfilter, UsernamePasswordAuthenticationFilter.class)
+			.sessionManagement(a-> a.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
+			.build() ;
 		
 	}
 	
@@ -74,7 +74,7 @@ public class SecurityConfiguration {
 	    return source;
 	}
 	
-	
+
 
 
 	
@@ -85,3 +85,4 @@ public class SecurityConfiguration {
 	
 
 }
+
