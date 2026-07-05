@@ -51,7 +51,7 @@ public class SecurityConfiguration {
 
 	    CorsConfiguration configuration = new CorsConfiguration();
 
-	    configuration.setAllowedOrigins(List.of("http://127.0.0.1:5500" ,  "https://your-vercel-app.vercel.app"));
+	    configuration.setAllowedOrigins(List.of("http://127.0.0.1:5500" ,  "https://your-vercel-app.vercel.app" ,  "https://your-netlify-app.netlify.app"));
 
 	    configuration.setAllowedMethods(List.of(
 	            "GET",
