@@ -40,7 +40,7 @@ public class MyUserController {
 	}
 	
 	@GetMapping("/")
-//	@PreAuthorize("hasAnyRole('ADMIN','USER')")
+
 	
 	public String getHomePage() {
 		return "this is a home page" ;
