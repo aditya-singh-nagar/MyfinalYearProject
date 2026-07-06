@@ -51,7 +51,11 @@ public class SecurityConfiguration {
 
 	    CorsConfiguration configuration = new CorsConfiguration();
 
+<<<<<<< HEAD
 	    configuration.setAllowedOrigins(List.of("http://127.0.0.1:5500" ,  "https://your-vercel-app.vercel.app" ,  "https://your-netlify-app.netlify.app" , "https://candid-baklava-8c4d48.netlify.app/"));
+=======
+	    configuration.setAllowedOrigins(List.of("http://127.0.0.1:5500" ,  "https://your-vercel-app.vercel.app" ,  "https://your-netlify-app.netlify.app" ,  "https://myfinalyearproject-production.up.railway.app"));
+>>>>>>> 8956462a05ca4526f9b1e2563b022540703f5b99
 
 	    configuration.setAllowedMethods(List.of(
 	            "GET",
